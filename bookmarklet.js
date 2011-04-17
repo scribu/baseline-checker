@@ -1,0 +1,1 @@
+javascript:(function(){if(typeof(baseline_checker_bookmarklet)=='function')return(baseline_checker_bookmarklet());js=document.createElement('script');js.type='text/javascript';js.src='http://scribu.net/tools/baseline-checker/load.js?v='+(Math.random());document.getElementsByTagName('head')[0].appendChild(js);})();
