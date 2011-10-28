@@ -1,4 +1,4 @@
-baseline_checker_bookmarklet = (function() {
+(function() {
 	function include_css(filename) {
 		var css = document.createElement('link');
 
@@ -18,9 +18,8 @@ baseline_checker_bookmarklet = (function() {
 		document.getElementsByTagName('head')[0].appendChild(js);
 	}
 
-//	version = Math.random();
-	version = '1.0';
-	domain = 'http://scribu.net/tools/baseline-checker/';
+	var version = '1.0.1';
+	var domain = 'http://scribu.net/tools/baseline-checker/';
 
 	include_css(domain + 'style.css?ver=' + version);
 
@@ -29,6 +28,5 @@ baseline_checker_bookmarklet = (function() {
 
 	include_js(domain + 'script.js?ver=' + version);
 
-	baseline_checker_bookmarklet.domain = domain;
-});
-baseline_checker_bookmarklet();
+	window.baseline_checker_domain = domain;
+})();
