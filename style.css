@@ -36,6 +36,11 @@
 	width: 100% !important;
 	margin: 0 !important;
 	padding: 0 !important;
+	-moz-box-sizing: content-box !important;
+	-ms-box-sizing: content-box !important;
+	-o-box-sizing: content-box !important;
+	-webkit-box-sizing: content-box !important;
+	box-sizing: content-box !important;
 }
 
 #baseline-checker div {border-top: 1px solid pink}
